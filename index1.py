@@ -120,3 +120,17 @@ ortalama=sum(gecmis_faturalar)/len(gecmis_faturalar)
 # Tahmin edilen fatura miktarını ekrana yazdıralım
 print("Tahmin edilen gelecek ayın fatura miktarı:", ortalama)
 
+
+#Girilen Üç Sayının yazılı ortalamasını alan programı ekrana yazdıran python kodunu ekrana yazdıran program
+
+sayi1=int(input("Bir Notunuzu giriniz:"))
+sayi2=int(input("İkinci Notunuzu giriniz:"))
+sayi3=int(input("Üçüncü Notunuzu giriniz:"))
+ortalama=(sayi1+sayi2+sayi3)/3
+print(f"Girilen Notların Ortalaması:{ortalama}")
+
+
+
+
+
+
