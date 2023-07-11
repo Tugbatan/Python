@@ -107,6 +107,16 @@ import datetime
 gecmis_faturalar=[150, 180, 200, 220, 190]
 
 #gelecek ayın tarihini hesaplıyoruz
-bugun= datetime.datetime.today()
-gelecek_ay=
+bugun= datetime.datetime.today() #Burada bugun değişkeni, datetime.date.today() fonksiyonunu kullanarak şu anki tarihi temsil eden bir datetime.date nesnesidir.
+gelecek_ay=datetime.date(bugun.year, bugun.month+ 1, 1) # şu anki tarihten bir ay sonrasının tarihini hesaplamak için kullanılır.
+
+#bugun.month + 1 ifadesi, şu anki ayın bir fazlasını temsil eder. Böylece bir sonraki ayın sayısını elde etmiş oluruz.
+#Son olarak, datetime.date(bugun.year, bugun.month + 1, 1) ifadesi, şu anki yılın aynı olmasını, ayın bir fazlasını ve günün 1 olmasını sağlayarak bir sonraki ayın 
+# ilk gününün tarihini temsil eden bir datetime.date nesnesi oluşturur.
+
+#! Geçmiş ayların fatura ortalamasını alalım
+ortalama=sum(gecmis_faturalar)/len(gecmis_faturalar)
+
+# Tahmin edilen fatura miktarını ekrana yazdıralım
+print("Tahmin edilen gelecek ayın fatura miktarı:", ortalama)
 
