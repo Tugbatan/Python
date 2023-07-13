@@ -118,19 +118,85 @@ gelecek_ay=datetime.date(bugun.year, bugun.month+ 1, 1) # şu anki tarihten bir 
 ortalama=sum(gecmis_faturalar)/len(gecmis_faturalar)
 
 # Tahmin edilen fatura miktarını ekrana yazdıralım
+
 print("Tahmin edilen gelecek ayın fatura miktarı:", ortalama)
 
 
-#Girilen Üç Sayının yazılı ortalamasını alan programı ekrana yazdıran python kodunu ekrana yazdıran program
+#!Girilen Üç Sayının yazılı ortalamasını alan programı ekrana yazdıran python kodunu ekrana yazdıran program
 
-sayi1=int(input("Bir Notunuzu giriniz:"))
-sayi2=int(input("İkinci Notunuzu giriniz:"))
-sayi3=int(input("Üçüncü Notunuzu giriniz:"))
-ortalama=(sayi1+sayi2+sayi3)/3
-print(f"Girilen Notların Ortalaması:{ortalama}")
-
-
+# sayi1=int(input("Bir Notunuzu giriniz:"))
+# sayi2=int(input("İkinci Notunuzu giriniz:"))
+# sayi3=int(input("Üçüncü Notunuzu giriniz:"))
+# ortalama=(sayi1+sayi2+sayi3)/3
+# print(f"Girilen Notların Ortalaması:{ortalama}")
 
 
+#!if ile ilgili Örnekler
+
+#Yazılı Ortalaması girilen öğrencinin sınıf geçme durumunu (Geçti Kaldı) olarak gösteren kod
 
 
+# yazili=int(input("Yazılı Ortalamasını Giriniz:"))
+# if(yazili>=50):
+#     print("Geçtiniz")
+# else:
+#     print("Kaldınız")
+
+
+#!Girilen Sayının Tek mi Çift mi Olduğunu Bulan Python Örneği
+
+sayi=int(input("Bir sayı giriniz:"))
+if(sayi%2==0):
+    print(f"Girilen Sayı : {sayi} çiftir ")
+else:
+    print(f"Girilen Sayı:{sayi} tektir")
+
+#Girilen Sayının Pozitif, Negatif, ya da 0 Olduğunu Bulan Python Örneği
+sayiDurum=int(input("bir sayı giriniz"))
+if(sayiDurum<0):
+    print(f"Girilne sayı {sayiDurum} negatiftir.")
+elif(sayiDurum>0):
+    print(f"Girilen sayı :{sayiDurum} pozitiftir")
+else:
+    print(f"Girilen sayı:{sayiDurum}")
+    
+    
+
+
+#Kullanıcıdan (1-4) arasında sayı alınacak, bu sayıya göre sırasıyla ilkbahar-yaz-sonbahar-kış yazan python örneği
+
+syigir=int(input(f"""
+           1 ile 4 arasında bir sayı giriniz:
+           "
+           1:İlkbahar
+           2:Yaz
+           3:Sonbahar
+           4:Kış
+           "
+           """))
+if(syigir==1):
+    print("İlkbahar")
+elif(syigir==2):
+    print("Yaz")
+elif(syigir==3):
+    print("Sonbahar")
+elif(syigir==4):
+    print("Kış")
+else:
+    print("sadece 1 ile 4 arasında sayı girebilirsiniz")
+
+
+
+
+#Kullanıcının girdiği metin ya da sayının palindrom olup olmadığını bulan Python programı
+
+
+
+
+
+
+#Fonksiyon kullanarak Python’da palindrom sayı veya metin bulmak
+
+# Kullanıcıdan bir metin girmesini isteyen ve girilen bu metinde bulunan sesli harflerin sayısını ekranda gösteren python örneği
+
+ #Kullanıcının girdiği sayının faktöriyelini hesaplayan python örneği
